@@ -18,7 +18,7 @@ public class HomeController {
     private UserRepository userRepository;
 
     //http://localhost:/9090/home/users
-    @GetMapping("/users")
+    @GetMapping("/getAllusers")
     public List<User> getUser(){
         System.out.println("getting users");
         return userRepository.findAll();
